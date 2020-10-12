@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mukta&display=swap');
+
+:root {
+    --main-color: black;
+    --accent-color: white;
+    font-family: 'Mukta', sans-serif;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+header .logo {
+    font-family: 'Krona One', sans-serif;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+header .menu-items {
+    flex: 1;
+    justify-content: space-around;
+}
+
+header .menu-items a {
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--main-color);
+    border: 1px solid transparent;
+    padding: 5px;
+}
+
+header .menu-items a:hover {
+    border: 1px solid var(--main-color);
+}
+
+@media (min-width: 769px) {
+
+    header .header-nav {
+        display: flex;
+    }
+
+    header .menu-items  {
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+header .header-banner {
+    background-image: url(../img/baby-yoda.svg);
+    background-position: center;
+    background-size: cover;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header .header-banner h1 {
+    color: var(--accent-color);
+    font-family: 'Krona One', sans-serif;
+    font-size: 3.5rem;
+}
